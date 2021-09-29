@@ -1,10 +1,13 @@
 Based on https://github.com/tensor-programming/golang-blockchain/tree/master
 
-Jeg bruker guidene fra "tensor-programming" for å teste en lokal implementasjon av grunnleggende strukturer og metoder av blockchain. 
+Using tutorials/blogs from _tensor-programming_ to test/demonstrate a local implementation of basic structures and methods of BLOCKCHAIN (including Proof-of-Work)
 
-# version01: grunnleggende struktuerer (lenket liste; genesis block; generering av hash)
+# version01 (look into branches)
+Demonstrating basic structures of blockchain, - linked list; creation of genesis block and a few mock block; generation of hash.
+Resources from _tensor-programming_:
 * (14:49) https://www.youtube.com/watch?v=mYlHT9bB6OE
 * https://steemit.com/utopian-io/@tensor/building-a-blockchain-with-go---go-modules-and-a-basic-blockchain---part-1 
+Demo of a run on macOS:
 ```
 $ go run main.go
 ------------------------------------
@@ -28,3 +31,7 @@ Data in Block: Block #3
 Hash: 7456a6eed0f3975371ef34eb60f6e3e7de719aa299dcdbc70346c359af6bf574
 ```
 # version02 
+Implementation of Proof-of-Work algorithm (proof hard to do, validation easy):
+* Take the data from the block
+* Create a counter (nonce) which starts at 0 (increments infinitely)
+* Check the hash to see if it meets a set of requirements (difficulty; requirements' example, -the rirst few bytes must contain zeros (20 zeros are common in Bitcoin)
