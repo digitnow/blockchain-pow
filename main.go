@@ -5,6 +5,8 @@ import (
     "bytes"
     "crypto/sha256"
 )
+
+// version01: implementing av simple linked list model to simulate a blockchain
 type BlockChain struct {
     blocks []*Block
 }
