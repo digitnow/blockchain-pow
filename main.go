@@ -49,7 +49,7 @@ func main() {
     chain.AddBlock("Block #1")
     chain.AddBlock("Block #2")
     chain.AddBlock("Block #3")
-    for _, block := range chain.Blocks {
+    for _, block := range chain.blocks {
         fmt.Printf("------------------------------------\n")
         fmt.Printf("Previous Hash: %x\n", block.PrevHash)
         fmt.Printf("Data in Block: %s\n", block.Data)
