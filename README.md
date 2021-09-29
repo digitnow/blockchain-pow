@@ -5,8 +5,8 @@ Jeg bruker guidene fra "tensor-programming" for å teste en lokal implementasjon
 # version01: grunnleggende struktuerer (lenket liste; genesis block; generering av hash)
 * (14:49) https://www.youtube.com/watch?v=mYlHT9bB6OE
 * https://steemit.com/utopian-io/@tensor/building-a-blockchain-with-go---go-modules-and-a-basic-blockchain---part-1 
-´´´
-´$ go run main.go
+```
+$ go run main.go
 ------------------------------------
 Previous Hash: 
 Data in Block: Genesis
@@ -26,5 +26,5 @@ Hash: 32e79dc8f2fc481c9bb58c875bef5a9f806ae2dfd7de90f13a08c89e5cf1216f
 Previous Hash: 32e79dc8f2fc481c9bb58c875bef5a9f806ae2dfd7de90f13a08c89e5cf1216f
 Data in Block: Block #3
 Hash: 7456a6eed0f3975371ef34eb60f6e3e7de719aa299dcdbc70346c359af6bf574
-´´´
+```
 # version02 
