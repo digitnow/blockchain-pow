@@ -43,7 +43,7 @@ func InitBlockChain() *BlockChain {
 }
 
 func main() {
-    chain := blockchain.InitBlockChain()
+    chain := InitBlockChain()
     chain.AddBlock("Block #1")
     chain.AddBlock("Block #2")
     chain.AddBlock("Block #3")
@@ -51,9 +51,8 @@ func main() {
         fmt.Printf("------------------------------------\n")
         fmt.Printf("Previous Hash: %x\n", block.PrevHash)
         fmt.Printf("Data in Block: %s\n", block.Data)
-        fmt.Printf("Hash: %x\n", block.Hash)
-        pow := blockchain.NewProof(block)
-        fmt.Printf("Pow: %s\n", strconv.FormatBool(pow.Validate()))
+        fmt.Printf("Hash: %x\n", block.Hash)        
+        
         fmt.Println()
     }
 }
